@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/holderCardView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_4"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/space_4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/test">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp">
+
+            <ImageView
+                android:id="@+id/gameimage"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:contentDescription="TODO"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                tools:srcCompat="@drawable/baseline_image_black_24" />
+
+            <ImageView
+                android:id="@+id/videplay"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:contentDescription="TODO"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gameimage"
+                tools:srcCompat="@drawable/baseline_image_black_24" />
+
+            <TextView
+                android:id="@+id/gametitlename"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Tom Clancy's Rainbow Six Siegev"
+                android:textAlignment="viewStart"
+                android:textColor="@color/md_grey_600"
+                android:textSize="@dimen/font_title_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/videplay"
+                app:layout_constraintTop_toBottomOf="@+id/gameimage" />
+
+            <TextView
+                android:id="@+id/gametimelist"
+                android:layout_width="0dp"
+                android:layout_height="19dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/roboto_light"
+                android:text="10-02-2019 at 04:30 PM"
+                android:textAlignment="viewStart"
+                android:textColor="@color/md_grey_800"
+                android:textSize="@dimen/font_body_s_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/distimeanddate"
+                app:layout_constraintTop_toBottomOf="@+id/gametitlename" />
+
+            <TextView
+                android:id="@+id/gametype"
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/roboto_light"
+                android:text="Type"
+                android:textAlignment="viewStart"
+                android:textColor="@color/md_black_1000"
+                android:textSize="@dimen/font_body_s_size"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/winprizeamount" />
+
+            <TextView
+                android:id="@+id/gametype1"
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/roboto_light"
+                android:text="------"
+                android:textAlignment="viewStart"
+                android:textColor="@color/md_grey_800"
+                android:textSize="@dimen/font_body_s_size"
+                app:layout_constraintEnd_toEndOf="@+id/gametype"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/gametype"
+                app:layout_constraintTop_toBottomOf="@+id/gametype" />
+
+            <TextView
+                android:id="@+id/versiontypename"
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:layout_marginStart="76dp"
+
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/roboto_light"
+                android:text="Version"
+                android:textAlignment="viewStart"
+                android:textColor="@color/md_black_1000"
+                android:textSize="@dimen/font_body_s_size"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/gametype"
+                app:layout_constraintTop_toBottomOf="@+id/perkill" />
+
+            <TextView
+                android:id="@+id/versiontypename1"
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/roboto_light"
+                android:text="TPP"
+                android:textAlignment="viewStart"
+                android:textColor="@color/md_grey_800"
+                android:textSize="@dimen/font_body_s_size"
+                app:layout_constraintEnd_toEndOf="@+id/versiontypename"
+                app:layout_constraintStart_toEndOf="@+id/gametype1"
+                app:layout_constraintTop_toBottomOf="@+id/versiontypename" />
+
+            <TextView
+                android:id="@+id/maptypename"
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/roboto_light"
+                android:text="Map"
+                android:textAlignment="viewStart"
+                android:textColor="@color/md_black_1000"
+                android:textSize="@dimen/font_body_s_size"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/disentry"
+                app:layout_constraintTop_toBottomOf="@+id/entryfee" />
+
+            <TextView
+                android:id="@+id/maptypename1"
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/roboto_light"
+                android:text="----"
+                android:textAlignment="viewStart"
+                android:textColor="@color/md_grey_800"
+                android:textSize="@dimen/font_body_s_size"
+                app:layout_constraintEnd_toEndOf="@+id/maptypename"
+                app:layout_constraintHorizontal_bias="0.571"
+                app:layout_constraintStart_toStartOf="@+id/maptypename"
+                app:layout_constraintTop_toBottomOf="@+id/maptypename" />
+
+            <TextView
+                android:id="@+id/distimeanddate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Date:"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gametitlename" />
+
+            <TextView
+                android:id="@+id/diswinprize"
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/roboto_light"
+                android:text="WIN PRIZE"
+                android:textAlignment="viewStart"
+                android:textColor="@color/md_black_1000"
+                android:textSize="@dimen/font_body_s_size"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/distimeanddate" />
+
+            <TextView
+                android:id="@+id/winprizeamount"
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/roboto_light"
+                android:text="-------"
+                android:textAlignment="viewStart"
+                android:textColor="@color/md_grey_800"
+                android:textSize="@dimen/font_body_s_size"
+                app:layout_constraintEnd_toEndOf="@+id/diswinprize"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/diswinprize" />
+
+            <TextView
+                android:id="@+id/disperkilll"
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:layout_marginStart="52dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/roboto_light"
+                android:text="PER KILL"
+                android:textAlignment="viewStart"
+                android:textColor="@color/md_black_1000"
+                android:textSize="@dimen/font_body_s_size"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/diswinprize"
+                app:layout_constraintTop_toBottomOf="@+id/distimeanddate" />
+
+            <TextView
+                android:id="@+id/perkill"
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/roboto_light"
+                android:text="----"
+                android:textAlignment="viewStart"
+                android:textColor="@color/md_grey_800"
+                android:textSize="@dimen/font_body_s_size"
+                app:layout_constraintEnd_toEndOf="@+id/disperkilll"
+                app:layout_constraintStart_toStartOf="@+id/disperkilll"
+                app:layout_constraintTop_toBottomOf="@+id/disperkilll" />
+
+            <TextView
+                android:id="@+id/disentry"
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:layout_marginStart="84dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/roboto_light"
+                android:text="ENTRY FEE"
+                android:textAlignment="viewStart"
+                android:textColor="@color/md_black_1000"
+                android:textSize="@dimen/font_body_s_size"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/disperkilll"
+                app:layout_constraintTop_toBottomOf="@+id/distimeanddate" />
+
+            <TextView
+                android:id="@+id/entryfee"
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/roboto_light"
+                android:text="$40"
+                android:textAlignment="viewStart"
+                android:textColor="@color/md_grey_800"
+                android:textSize="@dimen/font_body_s_size"
+                app:layout_constraintEnd_toEndOf="@+id/disentry"
+                app:layout_constraintStart_toStartOf="@+id/disentry"
+                app:layout_constraintTop_toBottomOf="@+id/disentry" />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end|right"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="4dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_smlarge"
+            android:layout_marginTop="@dimen/spacing_middle"
+            android:layout_marginRight="@dimen/spacing_smlarge"
+            android:layout_marginBottom="@dimen/spacing_middle"
+            android:clickable="true"
+            android:tint="@android:color/white"
+            app:backgroundTint="@color/colorPrimary"
+            app:fabSize="normal"
+            app:rippleColor="@android:color/white"
+            app:srcCompat="@drawable/ic_add" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

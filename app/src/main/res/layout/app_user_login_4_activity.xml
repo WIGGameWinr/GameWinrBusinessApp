@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_grey_100">
+
+    <!--<android.support.design.widget.AppBarLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:theme="@style/AppTheme.AppBarOverlay">-->
+
+        <!--<android.support.v7.widget.Toolbar-->
+            <!--android:id="@+id/toolbar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="?android:attr/actionBarSize"-->
+            <!--android:background="@color/colorPrimary"-->
+            <!--app:popupTheme="@style/AppTheme.PopupOverlay"/>-->
+
+    <!--</android.support.design.widget.AppBarLayout>-->
+
+    <android.support.constraint.ConstraintLayout
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/bgImageView"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:scaleType="fitXY"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:srcCompat="@drawable/baseline_image_black_24" />
+
+                <View
+                    android:id="@+id/view57"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@drawable/background_cover"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardView30"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="105dp"
+                    android:layout_marginEnd="24dp"
+                    app:cardCornerRadius="4dp"
+                    app:cardBackgroundColor="@color/md_grey_50"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/bgImageView"
+                    app:layout_constraintTop_toTopOf="@+id/bgImageView">
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/textView195"-->
+                            <!--android:layout_width="0dp"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginStart="12dp"-->
+                            <!--android:layout_marginTop="24dp"-->
+                            <!--android:layout_marginEnd="8dp"-->
+                            <!--android:fontFamily="@font/roboto"-->
+                            <!--android:text="Gift Booking"-->
+                            <!--android:textColor="@color/md_grey_500"-->
+                            <!--android:textSize="@dimen/fab_margin"-->
+                            <!--app:layout_constraintEnd_toEndOf="parent"-->
+                            <!--app:layout_constraintStart_toStartOf="parent"-->
+                            <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+                        <TextView
+                            android:id="@+id/textView196"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="24dp"
+                            android:layout_marginEnd="8dp"
+                            android:fontFamily="@font/roboto"
+                            android:text="Username"
+                            android:textAlignment="viewStart"
+                            android:textAllCaps="true"
+                            android:textColor="@color/md_grey_600"
+                            android:textSize="@dimen/font_body_size"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <EditText
+                            android:id="@+id/editText9"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginEnd="12dp"
+                            android:ems="10"
+                            android:fontFamily="@font/roboto"
+                            android:hint="UserName"
+                            android:inputType="textPersonName"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/md_grey_600"
+                            android:textColorHint="@color/md_grey_400"
+                            android:textSize="@dimen/font_body_size"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView196" />
+
+                        <TextView
+                            android:id="@+id/textView197"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginEnd="8dp"
+                            android:fontFamily="@font/roboto"
+                            android:text="Password"
+                            android:textAlignment="viewStart"
+                            android:textAllCaps="true"
+                            android:textColor="@color/md_grey_600"
+                            android:textSize="@dimen/font_body_size"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editText9" />
+
+                        <EditText
+                            android:id="@+id/editText10"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="12dp"
+                            android:ems="10"
+                            android:fontFamily="@font/roboto"
+                            android:hint="Password"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/md_grey_600"
+                            android:textColorHint="@color/md_grey_400"
+                            android:textSize="@dimen/font_body_size"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView197" />
+
+                        <TextView
+                            android:id="@+id/spinnertext"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginEnd="8dp"
+                            android:fontFamily="@font/roboto"
+                            android:text="Login Type"
+                            android:textAlignment="viewStart"
+                            android:textAllCaps="true"
+                            android:textColor="@color/md_grey_600"
+                            android:textSize="@dimen/font_body_size"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editText10" />
+
+                        <Spinner
+                            android:id="@+id/spinner"
+                            android:layout_width="270dp"
+                            android:layout_height="36dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_weight="1"
+                            android:textAlignment="viewStart"
+                            android:textColorHint="@color/md_grey_600"
+                            app:layout_constraintDimensionRatio="w,1:1"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/spinnertext" />
+
+
+                    </android.support.constraint.ConstraintLayout>
+                </android.support.v7.widget.CardView>
+
+                <Button
+                    android:id="@+id/loginButton"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="110dp"
+                    android:layout_marginEnd="30dp"
+                    android:background="@drawable/defaultbuttons"
+                    android:fontFamily="@font/roboto"
+                    android:textStyle="bold"
+                    android:text="Login"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="@dimen/font_body_size"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/cardView30" />
+
+                <!--<android.support.v7.widget.CardView-->
+                    <!--android:id="@+id/forgotTextView"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_marginStart="24dp"-->
+                    <!--android:layout_marginTop="40dp"-->
+                    <!--android:layout_marginEnd="24dp"-->
+                    <!--app:cardCornerRadius="4dp"-->
+                    <!--app:layout_constraintEnd_toEndOf="parent"-->
+                    <!--app:layout_constraintStart_toStartOf="parent"-->
+                    <!--app:layout_constraintTop_toBottomOf="@+id/loginButton">-->
+
+                    <!--<android.support.constraint.ConstraintLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent">-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/textView194"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginStart="8dp"-->
+                            <!--android:layout_marginTop="8dp"-->
+                            <!--android:layout_marginEnd="8dp"-->
+                            <!--android:layout_marginBottom="8dp"-->
+                            <!--android:fontFamily="@font/roboto"-->
+                            <!--android:text="Forgot password ?"-->
+                            <!--android:textAlignment="viewStart"-->
+                            <!--android:textColor="@color/md_grey_600"-->
+                            <!--android:textSize="@dimen/font_body_size"-->
+                            <!--app:layout_constraintBottom_toBottomOf="parent"-->
+                            <!--app:layout_constraintEnd_toEndOf="parent"-->
+                            <!--app:layout_constraintStart_toStartOf="parent"-->
+                            <!--app:layout_constraintTop_toTopOf="parent" />-->
+                    <!--</android.support.constraint.ConstraintLayout>-->
+                <!--</android.support.v7.widget.CardView>-->
+
+                <TextView
+                    android:id="@+id/forgotTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="16dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="Forgot your password ?"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/md_grey_500"
+                    android:textSize="@dimen/font_body_size"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/loginButton" />
+
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

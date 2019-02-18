@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.webingate.GameWinR">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/apphomeicon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/apphomeicon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.webingate.GameWinR.LoginGameActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+        android:name="com.webingate.GameWinR.AppUserLogin4Activity"/>
+        <activity
+            android:name="com.webingate.GameWinR.DashboardActivity"/>
+        <activity
+            android:name="com.webingate.GameWinR.GameListActivity"/>
+        <activity
+            android:name="com.webingate.GameWinR.GamelistDetailActivity"/>
+        <activity
+            android:name="com.webingate.GameWinR.FeatureProfileGeneralProfile1Activity"/>
+        <activity
+            android:name="com.webingate.GameWinR.NewECommerceItemDetailsActivity"/>
+
+        <activity
+            android:name="com.webingate.GameWinR.NewItemActivity"/>
+        <activity
+            android:name="com.webingate.GameWinR.UserDashboardActivity"/>
+        <activity
+            android:name="com.webingate.GameWinR.ReportsListActivity"/>
+        <activity
+            android:name="com.webingate.GameWinR.PaymentsListActivity"/>
+        <activity
+            android:name="com.webingate.GameWinR.BookingsListActivity"/>
+        <activity
+            android:name="com.webingate.GameWinR.UsersListActivity"/>
+        <activity
+            android:name="com.webingate.GameWinR.NotificationsListActivity"/>
+        <activity
+            android:name="com.webingate.GameWinR.CouponsListActivity"/>
+        <activity
+            android:name="com.webingate.GameWinR.ForgotPasswordActivity"/>
+        <activity
+            android:name="com.webingate.GameWinR.NewCouponActivity"/>
+        <activity
+            android:name="com.webingate.GameWinR.NewUserCreationActivity"/>
+        <activity
+            android:name="com.webingate.GameWinR.BookingHistoryActivity"/>
+        <activity
+        android:name="com.webingate.GameWinR.PaymentsHistoryActivity"/>
+        <activity android:name="com.webingate.GameWinR.PricingConfigListActivity"/>
+        <activity android:name="com.webingate.GameWinR.WinnersListActivity"/>
+        <activity android:name="com.webingate.GameWinR.PromoCodeListActivity"/>
+        <activity android:name="com.webingate.GameWinR.RoomConfigListActivity"/>
+        <activity android:name="com.webingate.GameWinR.SignUpActivity"/>
+        <activity android:name="com.webingate.GameWinR.GameListNewActivity"/>
+        <activity android:name="com.webingate.GameWinR.GameListDetails1Activity"/>
+        <activity android:name="com.webingate.GameWinR.RoomListDetailsActivity"/>
+        <activity android:name="com.webingate.GameWinR.RoomConfigListActivityNew"/>
+        <activity android:name="com.webingate.GameWinR.PriceConfigListDetailsActivity"/>
+        <activity android:name="com.webingate.GameWinR.PriceConfigListActivityNew"/>
+        <activity android:name="com.webingate.GameWinR.GameRoomConfigListActivity"/>
+        <activity android:name="com.webingate.GameWinR.GameRoomConfigListActivityDetails"/>
+        <activity android:name="com.webingate.GameWinR.GameRoomConfigListActivityNew"/>
+        <activity android:name="com.webingate.GameWinR.UserListActivityNew"/>
+        <activity android:name="com.webingate.GameWinR.EwalletVerificationActivity"/>
+        <activity android:name="com.webingate.GameWinR.EwalletMOTPVerificationActivity"/>
+        <activity android:name="com.webingate.GameWinR.EwalletMainActivity"/>
+        <activity
+            android:name="com.webingate.GameWinR.AdvertisementListActivity"/>
+        <activity
+            android:name="com.webingate.GameWinR.TroubleTicketActivity"/>
+
+        <activity android:name="cropper.CropImageActivity" android:theme="@style/Theme.AppCompat.Light"/>
+
+    </application>
+
+</manifest>

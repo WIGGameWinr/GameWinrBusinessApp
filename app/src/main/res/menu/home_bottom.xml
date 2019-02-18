@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeMenu"
+        android:icon="@drawable/baseline_home_line_24"
+        android:title="Home" />
+    <item
+        android:id="@+id/wallet"
+        android:icon="@drawable/wallet"
+        android:title="Ewallet" />
+
+    <item
+        android:id="@+id/inboxMenu"
+        android:icon="@drawable/baseline_inbox_black_24"
+        android:title="Notifications" />
+    <item
+        android:id="@+id/promocode"
+        android:icon="@drawable/promo2"
+        android:title="Promo Code list" />
+    <item
+        android:id="@+id/profileMenu"
+        android:icon="@drawable/baseline_user_24"
+        android:title="Profile" />
+
+</menu>
